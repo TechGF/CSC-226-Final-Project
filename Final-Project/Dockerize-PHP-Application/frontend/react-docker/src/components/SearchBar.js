@@ -2,9 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import { Card, CardMedia, CardContent } from '@mui/material';
+import { Card, CardContent } from '@mui/material';
 import './Style.css';
 import StarRating from "./StarRating";
+import GameCardMedia from "./GameCardMedia";
 
 function SearchBar() {
     const [query, setQuery] = useState('');
@@ -17,7 +18,7 @@ function SearchBar() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        fetch(`http://localhost/api/read.php?key=5599d030de7e4967846d6e1d6c7ed036&search_precise=true&search_exact=true&search=${query}`)
+        fetch(`http://localhost/api/rawgapi.php?key=5599d030de7e4967846d6e1d6c7ed036&search_precise=true&search_exact=true&search=${query}`)
             .then(response => response.json())
             .then(json => {
                 setResults(json.results);
@@ -43,12 +44,10 @@ function SearchBar() {
                     <div class="grid">
                         {results.map(result => (
                             <Card key={result.id}>
-                                <CardMedia
-                                    component="img"
-                                    alt={result.name}
-                                    height="150"
+                                <GameCardMedia
                                     image={result.background_image}
                                     title={result.name}
+                                    height="150"
                                     width="200"
                                 />
                                 <CardContent>
