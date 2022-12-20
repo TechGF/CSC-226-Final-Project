@@ -1,5 +1,5 @@
 # CSC-226-Final-Project
-Game Search Engine is a React frontend with a PHP backend application using Docker. The purpose of this application allows users to search and browse in demand games that is currently in today's market.
+Game Search Engine is a React frontend with a PHP backend application using Docker. The purpose of this application allows users to search and browse in demand games that is currently popular in today's market.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
