@@ -33,7 +33,7 @@ docker-compose up
 
 6. You can access the PHP backend at `http://localhost:8081`.
 
-## Video Walkthrough:
+## Video Walkthrough
 <img src='http://g.recordit.co/uA0KHnBWoF.gif'>
 
 ## Built With
