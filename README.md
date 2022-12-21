@@ -18,7 +18,7 @@ git clone https://github.com/TechGF/CSC-226-Final-Project.git
 2. Navigate to the project directory:
 ```bash
 cd CSC-226-final-project
-cd final-project
+cd Final-Project
 cd Dockerize-PHP-Application
 ```
 3. Build the Docker containers:
