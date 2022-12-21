@@ -45,6 +45,7 @@ docker-compose up
 ## Authors
 
 - **Gary Feng** - *GF* - [TechGF](https://github.com/techgf)
+- **Tom Oblocki** - *TO*
 
 ## License
 
